@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B3FE88672B240A56007C4804 /* CleanLottoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88662B240A56007C4804 /* CleanLottoApp.swift */; };
-		B3FE88692B240A56007C4804 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88682B240A56007C4804 /* ContentView.swift */; };
 		B3FE886B2B240A57007C4804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FE886A2B240A57007C4804 /* Assets.xcassets */; };
 		B3FE886E2B240A57007C4804 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FE886D2B240A57007C4804 /* Preview Assets.xcassets */; };
 		B3FE88782B240A57007C4804 /* CleanLottoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88772B240A57007C4804 /* CleanLottoTests.swift */; };
 		B3FE88822B240A57007C4804 /* CleanLottoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88812B240A57007C4804 /* CleanLottoUITests.swift */; };
 		B3FE88842B240A57007C4804 /* CleanLottoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88832B240A57007C4804 /* CleanLottoUITestsLaunchTests.swift */; };
+		B3FE88962B24374E007C4804 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88952B24374E007C4804 /* MainView.swift */; };
+		B3FE88982B243793007C4804 /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88972B243793007C4804 /* Lotto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		B3FE88632B240A56007C4804 /* CleanLotto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanLotto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FE88662B240A56007C4804 /* CleanLottoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanLottoApp.swift; sourceTree = "<group>"; };
-		B3FE88682B240A56007C4804 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3FE886A2B240A57007C4804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3FE886D2B240A57007C4804 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3FE88732B240A57007C4804 /* CleanLottoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanLottoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,8 @@
 		B3FE887D2B240A57007C4804 /* CleanLottoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanLottoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FE88812B240A57007C4804 /* CleanLottoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanLottoUITests.swift; sourceTree = "<group>"; };
 		B3FE88832B240A57007C4804 /* CleanLottoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanLottoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B3FE88952B24374E007C4804 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B3FE88972B243793007C4804 /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,10 @@
 		B3FE88652B240A56007C4804 /* CleanLotto */ = {
 			isa = PBXGroup;
 			children = (
+				B3FE88922B243730007C4804 /* Views */,
+				B3FE88912B243729007C4804 /* API */,
+				B3FE88902B243724007C4804 /* Model */,
 				B3FE88662B240A56007C4804 /* CleanLottoApp.swift */,
-				B3FE88682B240A56007C4804 /* ContentView.swift */,
 				B3FE886A2B240A57007C4804 /* Assets.xcassets */,
 				B3FE886C2B240A57007C4804 /* Preview Content */,
 			);
@@ -125,6 +129,45 @@
 				B3FE88832B240A57007C4804 /* CleanLottoUITestsLaunchTests.swift */,
 			);
 			path = CleanLottoUITests;
+			sourceTree = "<group>";
+		};
+		B3FE88902B243724007C4804 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3FE88972B243793007C4804 /* Lotto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3FE88912B243729007C4804 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B3FE88922B243730007C4804 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3FE88932B243739007C4804 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B3FE88932B243739007C4804 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B3FE88942B243742007C4804 /* MainView */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B3FE88942B243742007C4804 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				B3FE88952B24374E007C4804 /* MainView.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3FE88692B240A56007C4804 /* ContentView.swift in Sources */,
+				B3FE88982B243793007C4804 /* Lotto.swift in Sources */,
+				B3FE88962B24374E007C4804 /* MainView.swift in Sources */,
 				B3FE88672B240A56007C4804 /* CleanLottoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
