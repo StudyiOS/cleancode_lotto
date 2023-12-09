@@ -2,7 +2,7 @@
 //  CleanLottoUITestsLaunchTests.swift
 //  CleanLottoUITests
 //
-//  Created by Leo on 12/9/23.
+//  Created by elly on 12/9/23.
 //
 
 import XCTest
