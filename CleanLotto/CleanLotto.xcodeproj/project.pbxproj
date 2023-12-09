@@ -13,7 +13,26 @@
 		551495CB2B24C1C6000FE884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551495C92B24C1C6000FE884 /* Main.storyboard */; };
 		551495CD2B24C1C7000FE884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551495CC2B24C1C7000FE884 /* Assets.xcassets */; };
 		551495D02B24C1C7000FE884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551495CE2B24C1C7000FE884 /* LaunchScreen.storyboard */; };
+		551495D92B24C30A000FE884 /* JimmyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 551495D82B24C30A000FE884 /* JimmyKit */; };
+		551495DC2B24C355000FE884 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 551495DB2B24C355000FE884 /* CombineMoya */; };
+		551495DE2B24C355000FE884 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 551495DD2B24C355000FE884 /* Moya */; };
+		551495E02B24C355000FE884 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 551495DF2B24C355000FE884 /* ReactiveMoya */; };
+		551495E22B24C355000FE884 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 551495E12B24C355000FE884 /* RxMoya */; };
+		551495E42B24C3B5000FE884 /* LottoAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551495E32B24C3B5000FE884 /* LottoAPIService.swift */; };
+		551495EC2B24C52C000FE884 /* CleanLottoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551495EB2B24C52C000FE884 /* CleanLottoTests.swift */; };
+		551495F42B24CDC4000FE884 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551495F32B24CDC4000FE884 /* NetworkManager.swift */; };
+		551495F62B24CE96000FE884 /* LottoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551495F52B24CE96000FE884 /* LottoResponse.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		551495ED2B24C52C000FE884 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551495B82B24C1C6000FE884 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 551495BF2B24C1C6000FE884;
+			remoteInfo = CleanLotto;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		551495C02B24C1C6000FE884 /* CleanLotto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanLotto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +43,27 @@
 		551495CC2B24C1C7000FE884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		551495CF2B24C1C7000FE884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		551495D12B24C1C7000FE884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		551495E32B24C3B5000FE884 /* LottoAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoAPIService.swift; sourceTree = "<group>"; };
+		551495E92B24C52C000FE884 /* CleanLottoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanLottoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		551495EB2B24C52C000FE884 /* CleanLottoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanLottoTests.swift; sourceTree = "<group>"; };
+		551495F32B24CDC4000FE884 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		551495F52B24CE96000FE884 /* LottoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		551495BD2B24C1C6000FE884 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551495E22B24C355000FE884 /* RxMoya in Frameworks */,
+				551495DC2B24C355000FE884 /* CombineMoya in Frameworks */,
+				551495E02B24C355000FE884 /* ReactiveMoya in Frameworks */,
+				551495D92B24C30A000FE884 /* JimmyKit in Frameworks */,
+				551495DE2B24C355000FE884 /* Moya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		551495E62B24C52C000FE884 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				551495C22B24C1C6000FE884 /* CleanLotto */,
+				551495EA2B24C52C000FE884 /* CleanLottoTests */,
 				551495C12B24C1C6000FE884 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				551495C02B24C1C6000FE884 /* CleanLotto.app */,
+				551495E92B24C52C000FE884 /* CleanLottoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +101,27 @@
 				551495CC2B24C1C7000FE884 /* Assets.xcassets */,
 				551495CE2B24C1C7000FE884 /* LaunchScreen.storyboard */,
 				551495D12B24C1C7000FE884 /* Info.plist */,
+				551495F22B24CDB3000FE884 /* Network */,
 			);
 			path = CleanLotto;
+			sourceTree = "<group>";
+		};
+		551495EA2B24C52C000FE884 /* CleanLottoTests */ = {
+			isa = PBXGroup;
+			children = (
+				551495EB2B24C52C000FE884 /* CleanLottoTests.swift */,
+			);
+			path = CleanLottoTests;
+			sourceTree = "<group>";
+		};
+		551495F22B24CDB3000FE884 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				551495E32B24C3B5000FE884 /* LottoAPIService.swift */,
+				551495F32B24CDC4000FE884 /* NetworkManager.swift */,
+				551495F52B24CE96000FE884 /* LottoResponse.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +140,34 @@
 			dependencies = (
 			);
 			name = CleanLotto;
+			packageProductDependencies = (
+				551495D82B24C30A000FE884 /* JimmyKit */,
+				551495DB2B24C355000FE884 /* CombineMoya */,
+				551495DD2B24C355000FE884 /* Moya */,
+				551495DF2B24C355000FE884 /* ReactiveMoya */,
+				551495E12B24C355000FE884 /* RxMoya */,
+			);
 			productName = CleanLotto;
 			productReference = 551495C02B24C1C6000FE884 /* CleanLotto.app */;
 			productType = "com.apple.product-type.application";
+		};
+		551495E82B24C52C000FE884 /* CleanLottoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 551495EF2B24C52C000FE884 /* Build configuration list for PBXNativeTarget "CleanLottoTests" */;
+			buildPhases = (
+				551495E52B24C52C000FE884 /* Sources */,
+				551495E62B24C52C000FE884 /* Frameworks */,
+				551495E72B24C52C000FE884 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				551495EE2B24C52C000FE884 /* PBXTargetDependency */,
+			);
+			name = CleanLottoTests;
+			productName = CleanLottoTests;
+			productReference = 551495E92B24C52C000FE884 /* CleanLottoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +182,10 @@
 					551495BF2B24C1C6000FE884 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
+					551495E82B24C52C000FE884 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 551495BF2B24C1C6000FE884;
+					};
 				};
 			};
 			buildConfigurationList = 551495BB2B24C1C6000FE884 /* Build configuration list for PBXProject "CleanLotto" */;
@@ -111,11 +197,16 @@
 				Base,
 			);
 			mainGroup = 551495B72B24C1C6000FE884;
+			packageReferences = (
+				551495D72B24C30A000FE884 /* XCRemoteSwiftPackageReference "JimmyKit" */,
+				551495DA2B24C355000FE884 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 551495C12B24C1C6000FE884 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				551495BF2B24C1C6000FE884 /* CleanLotto */,
+				551495E82B24C52C000FE884 /* CleanLottoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +222,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		551495E72B24C52C000FE884 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +236,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551495F42B24CDC4000FE884 /* NetworkManager.swift in Sources */,
 				551495C82B24C1C6000FE884 /* ViewController.swift in Sources */,
+				551495E42B24C3B5000FE884 /* LottoAPIService.swift in Sources */,
+				551495F62B24CE96000FE884 /* LottoResponse.swift in Sources */,
 				551495C42B24C1C6000FE884 /* AppDelegate.swift in Sources */,
 				551495C62B24C1C6000FE884 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		551495E52B24C52C000FE884 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551495EC2B24C52C000FE884 /* CleanLottoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		551495EE2B24C52C000FE884 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 551495BF2B24C1C6000FE884 /* CleanLotto */;
+			targetProxy = 551495ED2B24C52C000FE884 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		551495C92B24C1C6000FE884 /* Main.storyboard */ = {
@@ -218,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -341,6 +458,44 @@
 			};
 			name = Release;
 		};
+		551495F02B24C52C000FE884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VJ2VF4KUF7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jimmy.CleanLottoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanLotto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CleanLotto";
+			};
+			name = Debug;
+		};
+		551495F12B24C52C000FE884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VJ2VF4KUF7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jimmy.CleanLottoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanLotto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CleanLotto";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -362,7 +517,63 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		551495EF2B24C52C000FE884 /* Build configuration list for PBXNativeTarget "CleanLottoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				551495F02B24C52C000FE884 /* Debug */,
+				551495F12B24C52C000FE884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		551495D72B24C30A000FE884 /* XCRemoteSwiftPackageReference "JimmyKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jimmy-Jung/JimmyKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.4;
+			};
+		};
+		551495DA2B24C355000FE884 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		551495D82B24C30A000FE884 /* JimmyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 551495D72B24C30A000FE884 /* XCRemoteSwiftPackageReference "JimmyKit" */;
+			productName = JimmyKit;
+		};
+		551495DB2B24C355000FE884 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 551495DA2B24C355000FE884 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		551495DD2B24C355000FE884 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 551495DA2B24C355000FE884 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		551495DF2B24C355000FE884 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 551495DA2B24C355000FE884 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		551495E12B24C355000FE884 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 551495DA2B24C355000FE884 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 551495B82B24C1C6000FE884 /* Project object */;
 }
