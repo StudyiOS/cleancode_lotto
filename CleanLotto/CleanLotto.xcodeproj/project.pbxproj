@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B3FE88672B240A56007C4804 /* CleanLottoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88662B240A56007C4804 /* CleanLottoApp.swift */; };
-		B3FE88692B240A56007C4804 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88682B240A56007C4804 /* ContentView.swift */; };
+		B3FE88692B240A56007C4804 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88682B240A56007C4804 /* MainView.swift */; };
 		B3FE886B2B240A57007C4804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FE886A2B240A57007C4804 /* Assets.xcassets */; };
 		B3FE886E2B240A57007C4804 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FE886D2B240A57007C4804 /* Preview Assets.xcassets */; };
 		B3FE88782B240A57007C4804 /* CleanLottoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88772B240A57007C4804 /* CleanLottoTests.swift */; };
 		B3FE88822B240A57007C4804 /* CleanLottoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88812B240A57007C4804 /* CleanLottoUITests.swift */; };
 		B3FE88842B240A57007C4804 /* CleanLottoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88832B240A57007C4804 /* CleanLottoUITestsLaunchTests.swift */; };
+		F1EF45D82B24A81900E9E75B /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF45D72B24A81900E9E75B /* Lotto.swift */; };
+		F1EF45DB2B24AFBD00E9E75B /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF45DA2B24AFBD00E9E75B /* NetworkingManager.swift */; };
+		F1EF45E02B24B92A00E9E75B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF45DF2B24B92A00E9E75B /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		B3FE88632B240A56007C4804 /* CleanLotto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanLotto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FE88662B240A56007C4804 /* CleanLottoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanLottoApp.swift; sourceTree = "<group>"; };
-		B3FE88682B240A56007C4804 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3FE88682B240A56007C4804 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B3FE886A2B240A57007C4804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3FE886D2B240A57007C4804 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3FE88732B240A57007C4804 /* CleanLottoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanLottoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		B3FE887D2B240A57007C4804 /* CleanLottoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanLottoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FE88812B240A57007C4804 /* CleanLottoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanLottoUITests.swift; sourceTree = "<group>"; };
 		B3FE88832B240A57007C4804 /* CleanLottoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanLottoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1EF45D72B24A81900E9E75B /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
+		F1EF45DA2B24AFBD00E9E75B /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		F1EF45DF2B24B92A00E9E75B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				B3FE88662B240A56007C4804 /* CleanLottoApp.swift */,
-				B3FE88682B240A56007C4804 /* ContentView.swift */,
+				F1EF45D92B24ADA400E9E75B /* API */,
+				F1EF45D42B24A7E000E9E75B /* Models */,
+				F1EF45DE2B24B91A00E9E75B /* ViewModels */,
+				F1EF45D52B24A7F400E9E75B /* Views */,
 				B3FE886A2B240A57007C4804 /* Assets.xcassets */,
 				B3FE886C2B240A57007C4804 /* Preview Content */,
 			);
@@ -125,6 +134,46 @@
 				B3FE88832B240A57007C4804 /* CleanLottoUITestsLaunchTests.swift */,
 			);
 			path = CleanLottoUITests;
+			sourceTree = "<group>";
+		};
+		F1EF45D42B24A7E000E9E75B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1EF45D72B24A81900E9E75B /* Lotto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1EF45D52B24A7F400E9E75B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3FE88682B240A56007C4804 /* MainView.swift */,
+				F1EF45D62B24A80600E9E75B /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1EF45D62B24A80600E9E75B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F1EF45D92B24ADA400E9E75B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F1EF45DA2B24AFBD00E9E75B /* NetworkingManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F1EF45DE2B24B91A00E9E75B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F1EF45DF2B24B92A00E9E75B /* MainViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3FE88692B240A56007C4804 /* ContentView.swift in Sources */,
+				F1EF45E02B24B92A00E9E75B /* MainViewModel.swift in Sources */,
+				F1EF45D82B24A81900E9E75B /* Lotto.swift in Sources */,
+				F1EF45DB2B24AFBD00E9E75B /* NetworkingManager.swift in Sources */,
+				B3FE88692B240A56007C4804 /* MainView.swift in Sources */,
 				B3FE88672B240A56007C4804 /* CleanLottoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CleanLotto/Preview Content\"";
-				DEVELOPMENT_TEAM = S9ZP7UQ3NY;
+				DEVELOPMENT_TEAM = JY9QH7G8BB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -435,7 +487,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = leo.CleanLotto;
+				PRODUCT_BUNDLE_IDENTIFIER = sam.CleanLotto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -451,7 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CleanLotto/Preview Content\"";
-				DEVELOPMENT_TEAM = S9ZP7UQ3NY;
+				DEVELOPMENT_TEAM = JY9QH7G8BB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -464,7 +516,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = leo.CleanLotto;
+				PRODUCT_BUNDLE_IDENTIFIER = sam.CleanLotto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
