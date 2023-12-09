@@ -28,3 +28,7 @@
 * 언어나 프레임워크는 자유롭게!
 * 아키텍처도 자유롭게!
 * README도 작성하면 좋을 것 같아요!
+
+### API
+
+* http://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(num)
