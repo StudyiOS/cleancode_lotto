@@ -1,6 +1,6 @@
-# cleancode_lotto
+# 🚿 cleancode_lotto
 
-# 🚿로또 번호 조회
+# 로또 번호 조회
 
 ## 과제 설명
 
