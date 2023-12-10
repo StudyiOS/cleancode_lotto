@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct ResultView: View {
-//    @Binding var isPresented: Bool
-    
     var lottoResult: Lotto
     
     var body: some View {
@@ -31,4 +29,5 @@ struct ResultView: View {
         }
         .padding()
     }
+
 }

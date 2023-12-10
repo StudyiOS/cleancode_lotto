@@ -40,5 +40,5 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView(viewModel: MainViewModel())
+    MainView(viewModel: MainViewModel(dataFetcher: MockLottoFetcher()))
 }

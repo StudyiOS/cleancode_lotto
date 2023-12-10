@@ -10,11 +10,7 @@ import Foundation
 
 //https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=1096
 
-struct NetworkManager {
-    
-    private init() { }
-    
-    static let shared = NetworkManager()
+final class LottoFetcher: LottoFetchable {
     
     private var url: URL = URL(string: "https://www.dhlottery.co.kr/common.do")!
 
