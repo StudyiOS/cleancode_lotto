@@ -13,7 +13,7 @@ extension MainView {
         private var bag: Set<AnyCancellable> = []
 
         @Published var lotto: WinningLotto? = nil
-        @Published var round: Int = 1
+        @Published var round: Int = 1090
 
         init() {
             bind()

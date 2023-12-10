@@ -18,6 +18,10 @@
 		B3FE889C2B244BAA007C4804 /* DHLotteryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE889B2B244BAA007C4804 /* DHLotteryAPI.swift */; };
 		B3FE88A82B258899007C4804 /* DHLottoNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88A72B258899007C4804 /* DHLottoNumber.swift */; };
 		B3FE88AA2B2594B9007C4804 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88A92B2594B9007C4804 /* MainViewModel.swift */; };
+		B3FE88AE2B259E64007C4804 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88AD2B259E64007C4804 /* Color+.swift */; };
+		B3FE88B02B25E890007C4804 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88AF2B25E890007C4804 /* View+.swift */; };
+		B3FE88B22B25EA7A007C4804 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88B12B25EA7A007C4804 /* Optional+.swift */; };
+		B3FE88B42B25EEF7007C4804 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88B32B25EEF7007C4804 /* Int+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		B3FE88A72B258899007C4804 /* DHLottoNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHLottoNumber.swift; sourceTree = "<group>"; };
 		B3FE88A92B2594B9007C4804 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		B3FE88AB2B259D2A007C4804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B3FE88AD2B259E64007C4804 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		B3FE88AF2B25E890007C4804 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		B3FE88B12B25EA7A007C4804 /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+.swift"; sourceTree = "<group>"; };
+		B3FE88B32B25EEF7007C4804 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +112,11 @@
 			isa = PBXGroup;
 			children = (
 				B3FE88AB2B259D2A007C4804 /* Info.plist */,
+				B3FE88662B240A56007C4804 /* CleanLottoApp.swift */,
 				B3FE88922B243730007C4804 /* Views */,
 				B3FE88912B243729007C4804 /* Network */,
 				B3FE88902B243724007C4804 /* Model */,
-				B3FE88662B240A56007C4804 /* CleanLottoApp.swift */,
+				B3FE88AC2B259E52007C4804 /* Extensions */,
 				B3FE886A2B240A57007C4804 /* Assets.xcassets */,
 				B3FE886C2B240A57007C4804 /* Preview Content */,
 			);
@@ -179,6 +188,17 @@
 				B3FE88A92B2594B9007C4804 /* MainViewModel.swift */,
 			);
 			path = MainView;
+			sourceTree = "<group>";
+		};
+		B3FE88AC2B259E52007C4804 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3FE88AD2B259E64007C4804 /* Color+.swift */,
+				B3FE88AF2B25E890007C4804 /* View+.swift */,
+				B3FE88B12B25EA7A007C4804 /* Optional+.swift */,
+				B3FE88B32B25EEF7007C4804 /* Int+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,11 +333,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FE88AE2B259E64007C4804 /* Color+.swift in Sources */,
 				B3FE88982B243793007C4804 /* WinningLotto.swift in Sources */,
 				B3FE88962B24374E007C4804 /* MainView.swift in Sources */,
 				B3FE88A82B258899007C4804 /* DHLottoNumber.swift in Sources */,
+				B3FE88B02B25E890007C4804 /* View+.swift in Sources */,
 				B3FE889C2B244BAA007C4804 /* DHLotteryAPI.swift in Sources */,
 				B3FE88672B240A56007C4804 /* CleanLottoApp.swift in Sources */,
+				B3FE88B42B25EEF7007C4804 /* Int+.swift in Sources */,
+				B3FE88B22B25EA7A007C4804 /* Optional+.swift in Sources */,
 				B3FE88AA2B2594B9007C4804 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,7 @@ struct WinningLotto {
     let numbers: [Int]
     let bonusNumber: Int
     let date: String
+    let firstWinnerTotalAmount: Int
     let firstWinnerAmount: Int
     let firstWinners: Int
 
@@ -25,6 +26,7 @@ struct WinningLotto {
                         lottoNumber.drwtNo6]
         self.bonusNumber = lottoNumber.bnusNo
         self.date = lottoNumber.drwNoDate
+        self.firstWinnerTotalAmount = lottoNumber.firstAccumamnt
         self.firstWinnerAmount = lottoNumber.firstWinamnt
         self.firstWinners = lottoNumber.firstPrzwnerCo
     }
