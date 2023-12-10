@@ -22,6 +22,7 @@
 		B3FE88B02B25E890007C4804 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88AF2B25E890007C4804 /* View+.swift */; };
 		B3FE88B22B25EA7A007C4804 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88B12B25EA7A007C4804 /* Optional+.swift */; };
 		B3FE88B42B25EEF7007C4804 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88B32B25EEF7007C4804 /* Int+.swift */; };
+		B3FE88B72B25F469007C4804 /* MainViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88B62B25F469007C4804 /* MainViewComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B3FE88AF2B25E890007C4804 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		B3FE88B12B25EA7A007C4804 /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+.swift"; sourceTree = "<group>"; };
 		B3FE88B32B25EEF7007C4804 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		B3FE88B62B25F469007C4804 /* MainViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 		B3FE88942B243742007C4804 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				B3FE88B52B25F43E007C4804 /* Components */,
 				B3FE88952B24374E007C4804 /* MainView.swift */,
 				B3FE88A92B2594B9007C4804 /* MainViewModel.swift */,
 			);
@@ -199,6 +202,14 @@
 				B3FE88B32B25EEF7007C4804 /* Int+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B3FE88B52B25F43E007C4804 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B3FE88B62B25F469007C4804 /* MainViewComponents.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +352,7 @@
 				B3FE889C2B244BAA007C4804 /* DHLotteryAPI.swift in Sources */,
 				B3FE88672B240A56007C4804 /* CleanLottoApp.swift in Sources */,
 				B3FE88B42B25EEF7007C4804 /* Int+.swift in Sources */,
+				B3FE88B72B25F469007C4804 /* MainViewComponents.swift in Sources */,
 				B3FE88B22B25EA7A007C4804 /* Optional+.swift in Sources */,
 				B3FE88AA2B2594B9007C4804 /* MainViewModel.swift in Sources */,
 			);
