@@ -12,8 +12,8 @@ extension MainView {
     final class MainViewModel: ObservableObject {
         private var bag: Set<AnyCancellable> = []
 
-        @Published var lotto: WinningLotto? = nil
-        @Published var round: Int = 1090
+        @Published var lotto: WinningLotto?
+        @Published var round: Int = 1095
 
         init() {
             bind()
@@ -24,6 +24,10 @@ extension MainView {
                 .flatMap(DHLotteryAPI.fetchLotto)
                 .receive(on: DispatchQueue.main)
                 .assign(to: &$lotto)
+        }
+
+        func selectedRound(to round: Int) {
+            self.round = round
         }
     }
 }

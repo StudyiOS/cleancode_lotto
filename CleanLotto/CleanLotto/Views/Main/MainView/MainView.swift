@@ -17,6 +17,7 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel: MainViewModel
+    @State var selectedRound: Int = 1095
 
     var body: some View {
         Group {
@@ -27,6 +28,7 @@ struct MainView: View {
                     drawTitleSection(round: lotto.round, date: lotto.date)
                     drawNumberSection(numbers: lotto.numbers, bonusNumber: lotto.bonusNumber)
                     drawAmountTable(with: lotto)
+                    drawWinningRoundPicker()
                 }
                 .padding()
             } else {
@@ -35,8 +37,32 @@ struct MainView: View {
         }
         .foregroundStyle(Color.text)
         .roundedBackground(color: Color.background, cornerRadius: 20)
+        .onChange(of: selectedRound) {
+            viewModel.selectedRound(to: selectedRound)
+        }
     }
 }
+
+extension MainView {
+    func drawWinningRoundPicker() -> some View {
+        VStack {
+            Text("당첨 회차")
+                .bold()
+
+            Picker("당첨 회차를 선택하세요.", selection: $selectedRound) {
+                ForEach(1...1097, id: \.self) {
+                    Text($0.toString())
+                        .foregroundStyle(.white)
+                }
+            }
+            .labeledContentStyle(.automatic)
+            .pickerStyle(.wheel)
+            .frame(height: 150)
+        }
+        .padding(.top)
+    }
+}
+
 #Preview {
     MainView(viewModel: .init())
 }
