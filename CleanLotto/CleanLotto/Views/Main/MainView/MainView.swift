@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var viewModel: MainViewModel
+
     var body: some View {
         VStack {
             Text("Hello Lotto!")
+            Text(viewModel.lotto?.date ?? "")
         }
         .padding()
     }
 }
 
 #Preview {
-    MainView()
+    MainView(viewModel: .init())
 }
