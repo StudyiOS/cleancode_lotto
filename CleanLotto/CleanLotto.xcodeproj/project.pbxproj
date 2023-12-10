@@ -18,8 +18,10 @@
 		F11E360C2B259C5D001960AE /* BonusNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11E360B2B259C5D001960AE /* BonusNumberView.swift */; };
 		F11E360E2B259FB5001960AE /* ResultHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11E360D2B259FB5001960AE /* ResultHeaderView.swift */; };
 		F11E36102B25A2C8001960AE /* PrizeAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11E360F2B25A2C8001960AE /* PrizeAmountView.swift */; };
+		F11E36142B25AAE9001960AE /* MockLottoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11E36132B25AAE9001960AE /* MockLottoFetcher.swift */; };
+		F11E36162B25E4F5001960AE /* LottoFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11E36152B25E4F5001960AE /* LottoFetchable.swift */; };
 		F1EF45D82B24A81900E9E75B /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF45D72B24A81900E9E75B /* Lotto.swift */; };
-		F1EF45DB2B24AFBD00E9E75B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF45DA2B24AFBD00E9E75B /* NetworkManager.swift */; };
+		F1EF45DB2B24AFBD00E9E75B /* LottoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF45DA2B24AFBD00E9E75B /* LottoFetcher.swift */; };
 		F1EF45E02B24B92A00E9E75B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF45DF2B24B92A00E9E75B /* MainViewModel.swift */; };
 		F1EF45E22B24BF3A00E9E75B /* NumberCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF45E12B24BF3A00E9E75B /* NumberCircleView.swift */; };
 		F1EF45E42B24C04E00E9E75B /* NumberHStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EF45E32B24C04E00E9E75B /* NumberHStackView.swift */; };
@@ -60,8 +62,10 @@
 		F11E360B2B259C5D001960AE /* BonusNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusNumberView.swift; sourceTree = "<group>"; };
 		F11E360D2B259FB5001960AE /* ResultHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultHeaderView.swift; sourceTree = "<group>"; };
 		F11E360F2B25A2C8001960AE /* PrizeAmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeAmountView.swift; sourceTree = "<group>"; };
+		F11E36132B25AAE9001960AE /* MockLottoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLottoFetcher.swift; sourceTree = "<group>"; };
+		F11E36152B25E4F5001960AE /* LottoFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoFetchable.swift; sourceTree = "<group>"; };
 		F1EF45D72B24A81900E9E75B /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
-		F1EF45DA2B24AFBD00E9E75B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F1EF45DA2B24AFBD00E9E75B /* LottoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoFetcher.swift; sourceTree = "<group>"; };
 		F1EF45DF2B24B92A00E9E75B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F1EF45E12B24BF3A00E9E75B /* NumberCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCircleView.swift; sourceTree = "<group>"; };
 		F1EF45E32B24C04E00E9E75B /* NumberHStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberHStackView.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				B3FE88662B240A56007C4804 /* CleanLottoApp.swift */,
+				F11E36172B25E6C1001960AE /* Network */,
 				F1EF45D92B24ADA400E9E75B /* Helpers */,
 				F1EF45D42B24A7E000E9E75B /* Models */,
 				F1EF45DE2B24B91A00E9E75B /* ViewModels */,
@@ -155,6 +160,15 @@
 			path = CleanLottoUITests;
 			sourceTree = "<group>";
 		};
+		F11E36172B25E6C1001960AE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F1EF45DA2B24AFBD00E9E75B /* LottoFetcher.swift */,
+				F11E36132B25AAE9001960AE /* MockLottoFetcher.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F1EF45D42B24A7E000E9E75B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,7 +199,6 @@
 		F1EF45D92B24ADA400E9E75B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				F1EF45DA2B24AFBD00E9E75B /* NetworkManager.swift */,
 				F11E36092B257DE4001960AE /* LottoManager.swift */,
 			);
 			path = Helpers;
@@ -203,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				F1EF45E82B2571E200E9E75B /* ViewModelable.swift */,
+				F11E36152B25E4F5001960AE /* LottoFetchable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -359,13 +373,15 @@
 			files = (
 				F1EF45EF2B2573BF00E9E75B /* GameNumberPicker.swift in Sources */,
 				F1EF45E02B24B92A00E9E75B /* MainViewModel.swift in Sources */,
+				F11E36162B25E4F5001960AE /* LottoFetchable.swift in Sources */,
 				F1EF45E42B24C04E00E9E75B /* NumberHStackView.swift in Sources */,
 				F11E360E2B259FB5001960AE /* ResultHeaderView.swift in Sources */,
 				F11E360C2B259C5D001960AE /* BonusNumberView.swift in Sources */,
 				F1EF45D82B24A81900E9E75B /* Lotto.swift in Sources */,
-				F1EF45DB2B24AFBD00E9E75B /* NetworkManager.swift in Sources */,
+				F1EF45DB2B24AFBD00E9E75B /* LottoFetcher.swift in Sources */,
 				F1EF45E22B24BF3A00E9E75B /* NumberCircleView.swift in Sources */,
 				B3FE88692B240A56007C4804 /* MainView.swift in Sources */,
+				F11E36142B25AAE9001960AE /* MockLottoFetcher.swift in Sources */,
 				F1EF45F12B25763700E9E75B /* ResultView.swift in Sources */,
 				F11E360A2B257DE4001960AE /* LottoManager.swift in Sources */,
 				F11E36102B25A2C8001960AE /* PrizeAmountView.swift in Sources */,

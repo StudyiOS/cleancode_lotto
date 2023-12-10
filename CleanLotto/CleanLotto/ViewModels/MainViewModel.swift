@@ -10,8 +10,6 @@ import Combine
 
 final class MainViewModel: ViewModelable {
     
-    @Published var showResult: Bool = false
-    
     enum Action {
         case startSearch
     }
@@ -22,16 +20,20 @@ final class MainViewModel: ViewModelable {
     }
     
     var state: State
-    var cancellables = Set<AnyCancellable>()
+    private let dataFetcher: LottoFetchable
+    private var cancellables = Set<AnyCancellable>()
     
-    init() {
+    @Published var showResult: Bool = false
+    
+    init(dataFetcher: LottoFetchable) {
         self.state = State(selectGameNumber: LottoManager.shared.lastDrawNumber)
+        self.dataFetcher = dataFetcher
     }
     
     func bindAction(_ action: Action) {
         switch action {
         case .startSearch:
-            NetworkManager.shared.searchLottoWith(gameNumber: state.selectGameNumber)
+            dataFetcher.searchLottoWith(gameNumber: state.selectGameNumber)
                 .sink { [weak self] in
                     self?.state.lottoResult = $0
                     self?.showResult = true
