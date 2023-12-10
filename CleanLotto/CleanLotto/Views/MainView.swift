@@ -8,14 +8,37 @@
 import SwiftUI
 
 struct MainView: View {
+    @ObservedObject var viewModel: MainViewModel
+    
     var body: some View {
-        VStack {
-            Text("Lotto")
+        List {
+            Section {
+                GameNumberPicker(selectedGameNumber: $viewModel.state.selectGameNumber)
+                
+                buildSelectButton
+            }
         }
-        .padding()
+        .sheet(isPresented: $viewModel.showResult) {
+            buildResultModalView
+        }
+    }
+    
+    @ViewBuilder
+    var buildSelectButton: some View {
+        Button {
+            viewModel.bindAction(.startSearch)
+        } label: {
+            Text("조회하기")
+                .bold()
+        }
+    }
+    
+    @ViewBuilder
+    var buildResultModalView: some View {
+        ResultView(lottoResult: viewModel.state.lottoResult ?? Lotto.mockData)
     }
 }
 
 #Preview {
-    MainView()
+    MainView(viewModel: MainViewModel())
 }
