@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class LottoViewModel {
     private var lottoInfo: LottoInfo? {
@@ -14,6 +15,7 @@ class LottoViewModel {
         }
     }
     private(set) var currentRound: Int = 1096
+    private var ballColors: [String] = ["#ffff00", "#0091e4", "#a52a2a", "#b3b7bf", "#00ff00"]
     
     // Input (VC -> VM)
     var prevRoundTapEvent: Bool = false {

@@ -23,3 +23,17 @@ struct LottoInfo: Decodable {
     let bnusNo: Int             // 로또 보너스 번호
     let drwNo: Int              // 로또회차
 }
+
+extension LottoInfo {
+    func makeLottoBalls() -> [LottoBall] {
+        return [
+            LottoBall(number: drwtNo1),
+            LottoBall(number: drwtNo2),
+            LottoBall(number: drwtNo3),
+            LottoBall(number: drwtNo4),
+            LottoBall(number: drwtNo5),
+            LottoBall(number: drwtNo6),
+            LottoBall(number: bnusNo, type: .bonus)
+        ]
+    }
+}

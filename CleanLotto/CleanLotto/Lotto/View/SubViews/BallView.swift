@@ -8,8 +8,6 @@
 import UIKit
 
 class BallView: UIView {
-    private var ballColors: [UIColor] = [.yellow, .blue, .red, .gray, .green]
-    
     let containerView: UIView = UIView()
     lazy var numberLabel: UILabel = UILabel().then {
         $0.text = ""
@@ -18,11 +16,10 @@ class BallView: UIView {
         $0.clipsToBounds = true
     }
     
-    init(_ number: Int) {
+    init(_ ball: LottoBall) {
         super.init(frame: .zero)
-        self.numberLabel.text = "\(number)"
-        let index = Int(number / 10)
-        numberLabel.backgroundColor = ballColors[index]
+        self.numberLabel.text = "\(ball.number)"
+        numberLabel.backgroundColor = UIColor(hex: ball.color)
         
         addSubviews()
         makeConstraints()
