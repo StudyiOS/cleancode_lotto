@@ -59,7 +59,10 @@ final class LottoViewController: UIViewController {
     }
     
     private func getLottoDataFromNetworkManager(round: Int) {
-        networkManager.request(.getLottoWinInfo(round: round), instance: LottoResponse.self) { [weak self] result in
+        networkManager.request(
+            .getLottoWinInfo(round: round),
+            instance: LottoResponse.self
+        ) { [weak self] result in
             guard let self else { return }
             switch result {
             case .success(let response):
