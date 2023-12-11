@@ -13,14 +13,14 @@ extension MainView {
         private var bag: Set<AnyCancellable> = []
         static let INITIAL_ROUND = 1095
 
-        @Published var lotto: WinningLotto?
-        @Published var round: Int = INITIAL_ROUND
+        @Published private var lotto: WinningLotto?
+        @Published private var round: Int = INITIAL_ROUND
 
         init() {
             bind()
         }
 
-        func bind() {
+        private func bind() {
             $round
                 .flatMap(DHLotteryAPI.fetchLotto)
                 .receive(on: DispatchQueue.main)
@@ -29,6 +29,10 @@ extension MainView {
 
         func selectedRound(to round: Int) {
             self.round = round
+        }
+
+        func getLotto() -> WinningLotto? {
+            return lotto
         }
     }
 }

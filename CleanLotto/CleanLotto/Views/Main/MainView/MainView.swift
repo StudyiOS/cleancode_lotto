@@ -13,7 +13,7 @@ struct MainView: View {
 
     var body: some View {
         Group {
-            if let lotto = viewModel.lotto {
+            if let lotto = viewModel.getLotto() {
                 VStack {
                     drawHeaderSection()
                     drawTitleSection(round: lotto.round, date: lotto.date)
