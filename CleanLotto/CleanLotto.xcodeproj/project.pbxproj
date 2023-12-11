@@ -20,6 +20,9 @@
 		45D285132B24468400A52035 /* LottoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D285122B24468400A52035 /* LottoViewModel.swift */; };
 		45D285192B24488600A52035 /* LottoBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D285182B24488600A52035 /* LottoBall.swift */; };
 		45D2851B2B24530300A52035 /* LottoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2851A2B24530300A52035 /* LottoInfo.swift */; };
+		45D2851D2B245B3B00A52035 /* UISubviewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2851C2B245B3B00A52035 /* UISubviewStyle.swift */; };
+		45D2851F2B24651B00A52035 /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2851E2B24651B00A52035 /* BallView.swift */; };
+		45D285212B26C86300A52035 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D285202B26C86300A52035 /* Int+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		45D285122B24468400A52035 /* LottoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewModel.swift; sourceTree = "<group>"; };
 		45D285182B24488600A52035 /* LottoBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoBall.swift; sourceTree = "<group>"; };
 		45D2851A2B24530300A52035 /* LottoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoInfo.swift; sourceTree = "<group>"; };
+		45D2851C2B245B3B00A52035 /* UISubviewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISubviewStyle.swift; sourceTree = "<group>"; };
+		45D2851E2B24651B00A52035 /* BallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
+		45D285202B26C86300A52035 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 				45D284E32B2438B700A52035 /* Assets.xcassets */,
 				45D284E52B2438B700A52035 /* LaunchScreen.storyboard */,
 				45D284E82B2438B700A52035 /* Info.plist */,
+				45D285202B26C86300A52035 /* Int+.swift */,
 			);
 			path = CleanLotto;
 			sourceTree = "<group>";
@@ -138,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				45D284DE2B2438B600A52035 /* LottoViewController.swift */,
+				45D2851E2B24651B00A52035 /* BallView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,6 +164,7 @@
 				45D285142B2446AD00A52035 /* View */,
 				45D285152B2446C300A52035 /* ViewModel */,
 				45D285172B2446E200A52035 /* Model */,
+				45D2851C2B245B3B00A52035 /* UISubviewStyle.swift */,
 			);
 			path = Lotto;
 			sourceTree = "<group>";
@@ -307,9 +316,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D2851F2B24651B00A52035 /* BallView.swift in Sources */,
 				45D284DF2B2438B600A52035 /* LottoViewController.swift in Sources */,
 				45D285132B24468400A52035 /* LottoViewModel.swift in Sources */,
 				45D2851B2B24530300A52035 /* LottoInfo.swift in Sources */,
+				45D2851D2B245B3B00A52035 /* UISubviewStyle.swift in Sources */,
+				45D285212B26C86300A52035 /* Int+.swift in Sources */,
 				45D284DB2B2438B600A52035 /* AppDelegate.swift in Sources */,
 				45D285192B24488600A52035 /* LottoBall.swift in Sources */,
 				45D284DD2B2438B600A52035 /* SceneDelegate.swift in Sources */,
