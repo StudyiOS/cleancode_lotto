@@ -6,44 +6,43 @@
 //
 
 import Foundation
-import UIKit
 
 class LottoViewModel {
+    
+    // MARK: - Properties
+    
     private var lottoInfo: LottoInfo? {
         didSet {
             updateRoundInfo(lottoInfo)
         }
     }
-    private(set) var currentRound: Int = 1096
-    private var ballColors: [String] = ["#ffff00", "#0091e4", "#a52a2a", "#b3b7bf", "#00ff00"]
+    private(set) var currentRound: Int = 1097 {
+        didSet {
+            fetchLottoNumber()
+        }
+    }
     
-    // Input (VC -> VM)
-    var prevRoundTapEvent: Bool = false {
-        didSet {
-            currentRound -= 1
-            fetchLottoNumber()
-            prevRoundTapEvent = false
-        }
-    }
-    var nextRoundTapEvent: Bool = false {
-        didSet {
-            currentRound += 1
-            fetchLottoNumber()
-            nextRoundTapEvent = false
-        }
-    }
+    
+    // MARK: - Input (VC -> VM)
+    
     var textRoundEvent: Int = 0 {
         didSet {
             currentRound = textRoundEvent
-            fetchLottoNumber()
         }
     }
     
-    // Output (VM -> VC)
+    func changeRound(_ type: ChangeRoundType) {
+        currentRound += type.value
+    }
+    
+    
+    // MARK: - Output (VM -> VC)
+    
     var updateRoundInfo: (LottoInfo?) -> Void = { _ in }
     
     
-    // method
+    // MARK: - Method
+    
     func fetchLottoNumber() {
         guard let url: URL = URL(string: "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(currentRound)") else {
             return
@@ -59,7 +58,9 @@ class LottoViewModel {
             
             if let response: HTTPURLResponse = response as? HTTPURLResponse {
                 if successRange.contains(response.statusCode) {
+                    print(String(data: data, encoding: .utf8))
                     guard let lottoInfo: LottoInfo = try? JSONDecoder().decode(LottoInfo.self, from: data) else { return }
+                    
                     self.lottoInfo = lottoInfo
                 } else {
                     print("error")
