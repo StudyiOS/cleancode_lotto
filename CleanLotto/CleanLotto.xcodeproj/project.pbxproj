@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		453088E92B27670400E199B9 /* BallColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088E82B27670400E199B9 /* BallColorType.swift */; };
 		453088EB2B2767C200E199B9 /* ChangeRoundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088EA2B2767C200E199B9 /* ChangeRoundType.swift */; };
+		453088F12B276B9C00E199B9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088F02B276B9C00E199B9 /* NetworkManager.swift */; };
 		454EB4DB2B26D45C0038B260 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 454EB4DA2B26D45C0038B260 /* Localizable.xcstrings */; };
 		454EB4DD2B26E0EC0038B260 /* LottoBallContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454EB4DC2B26E0EC0038B260 /* LottoBallContainer.swift */; };
 		454EB4E02B26E7C40038B260 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454EB4DF2B26E7C40038B260 /* Color+.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		453088E82B27670400E199B9 /* BallColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallColorType.swift; sourceTree = "<group>"; };
 		453088EA2B2767C200E199B9 /* ChangeRoundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRoundType.swift; sourceTree = "<group>"; };
+		453088F02B276B9C00E199B9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		454EB4DA2B26D45C0038B260 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		454EB4DC2B26E0EC0038B260 /* LottoBallContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoBallContainer.swift; sourceTree = "<group>"; };
 		454EB4DF2B26E7C40038B260 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		453088EF2B2769EC00E199B9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				453088F02B276B9C00E199B9 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		454EB4DE2B26E7B80038B260 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				45D285162B2446D500A52035 /* Lotto */,
+				453088EF2B2769EC00E199B9 /* Network */,
 				454EB4DE2B26E7B80038B260 /* Extension */,
 				45D284DA2B2438B600A52035 /* AppDelegate.swift */,
 				45D284DC2B2438B600A52035 /* SceneDelegate.swift */,
@@ -355,6 +366,7 @@
 				45D2851B2B24530300A52035 /* LottoInfo.swift in Sources */,
 				45D2851D2B245B3B00A52035 /* UISubviewStyle.swift in Sources */,
 				454EB4DD2B26E0EC0038B260 /* LottoBallContainer.swift in Sources */,
+				453088F12B276B9C00E199B9 /* NetworkManager.swift in Sources */,
 				453088E92B27670400E199B9 /* BallColorType.swift in Sources */,
 				45D285212B26C86300A52035 /* Int+.swift in Sources */,
 				453088EB2B2767C200E199B9 /* ChangeRoundType.swift in Sources */,

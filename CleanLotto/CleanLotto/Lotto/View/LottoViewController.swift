@@ -66,14 +66,14 @@ class LottoViewController: UIViewController {
         self.view.backgroundColor = .white
         self.title = "CleanLotto"
         
-        viewModel.fetchLottoNumber()
-        
         bindViewModel()
         
         addSubviews()
         makeConstraints()
         
         setButtonClickEvent()
+        
+        viewModel.setInitialLottoRound()
     }
     
     
@@ -93,6 +93,10 @@ class LottoViewController: UIViewController {
             guard let info else { return }
             self?.updateUI(by: info)
         }
+        
+        viewModel.showErrorAlert = { [weak self] error in
+            self?.showAlert(of: error)
+        }
     }
     
     private func updateUI(by info: LottoInfo) {
@@ -102,6 +106,17 @@ class LottoViewController: UIViewController {
             self.lottoBallContainerView.addLottoBalls(by: info.makeLottoBalls())
             self.priceLabel.text = "\(info.firstAccumamnt.hundredMillion())"
             self.winnerLabel.text = "( \(info.firstPrzwnerCo.unit(.numberOfPeople)) / \(info.firstWinamnt.hundredMillion()) )"
+        }
+    }
+    
+    private func showAlert(of errorType: ErrorType) {
+        let alert = UIAlertController(title: "에러!!",
+                                      message: errorType.description,
+                                      preferredStyle: .alert)
+        let okAction =  UIAlertAction(title: "ok", style: UIAlertAction.Style.default)
+        alert.addAction(okAction)
+        DispatchQueue.main.async {
+            self.present(alert, animated: false)
         }
     }
     
