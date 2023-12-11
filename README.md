@@ -33,3 +33,13 @@
 ### API
 
 * http://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(num)
+
+---
+
+## Sam 구현 내용
+1. 회차 초기값: 가장 최근 회차 
+2. Picker로 조회 원하는 회차 선택 -> '조회하기' 버튼 클릭 -> modal에 선택한 회차에 대한 결과값 확인
+3. Mock Data 설정
+
+![Simulator Screen Recording - iPhone 15 Pro - 2023-12-11 at 20 51 33](https://github.com/StudyiOS/cleancode_lotto/assets/126672733/81dcde2c-9dab-44ed-b67d-4f97e97c3326)
+
