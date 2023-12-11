@@ -40,11 +40,11 @@ struct LottoManager {
         let koreaDateComponents = calendar.dateComponents(in: koreaTimeZone, from: currentDate)
         let weekday = koreaDateComponents.weekday!
         let hour = koreaDateComponents.hour!
-        let saturday = 7 // 1: Sunday, 2: Monday, ..., 7: Saturday
-        let sunday = 1 // 1: Sunday
+        let saturday = 1 // 1: Saturday, 2: Sunday, ..., 7: Monday
+        let monday = 7
 
-        // 현재 날짜가 토요일이고, 시간이 오후 10시 이후이거나, 현재 날짜가 일요일이라면 로또 회차를 1 더해줍니다.
-        if (weekday == saturday && hour >= 22) || weekday == sunday {
+        // 현재 날짜가 토요일이고, 시간이 오후 10시 이후이거나, 현재 날짜가 토요일 이후인 경우 +1
+        if (weekday == saturday && hour >= 22) || weekday > saturday {
             return weekOfYear + 1
         } else {
             return weekOfYear
