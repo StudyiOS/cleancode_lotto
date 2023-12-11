@@ -1,6 +1,61 @@
 {
   "sourceLanguage" : "ko",
   "strings" : {
+    "Lotto.error_alert_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "에러!!"
+          }
+        }
+      }
+    },
+    "Lotto.Error.decoder_error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "response decode 에러입니다."
+          }
+        }
+      }
+    },
+    "Lotto.Error.empty_data_error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "response data가 값이 없습니다."
+          }
+        }
+      }
+    },
+    "Lotto.Error.network_url_error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "url을 다시 확인해보세요."
+          }
+        }
+      }
+    },
+    "Lotto.Error.no_success_error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "response error 입니다."
+          }
+        }
+      }
+    },
     "Lotto.hundred_million" : {
       "extractionState" : "manual",
       "localizations" : {
