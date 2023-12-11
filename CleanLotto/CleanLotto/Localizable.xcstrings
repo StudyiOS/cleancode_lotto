@@ -1,0 +1,39 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "Lotto.hundred_million" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "억"
+          }
+        }
+      }
+    },
+    "Lotto.number_of_people" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "명"
+          }
+        }
+      }
+    },
+    "Lotto.winning_result" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "회 당첨결과"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

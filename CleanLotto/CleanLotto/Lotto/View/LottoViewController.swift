@@ -19,10 +19,10 @@ class LottoViewController: UIViewController {
         $0.keyboardType = .numberPad
     }
     private var lottoTitleLabel: UILabel = UILabel().then {
-        $0.text = "회 당첨결과"
+        $0.text = NSLocalizedString("Lotto.winning_result", comment: "")
     }
     private var dateLabel: UILabel = UILabel().then {
-        $0.text = "2023-12-10"
+        $0.text = ""
     }
     private var lottoBallContainerView: UIStackView = UIStackView().then {
         $0.axis = .horizontal
@@ -30,10 +30,10 @@ class LottoViewController: UIViewController {
     }
     private var winnerPriceView: UIView = UIView()
     private var priceLabel: UILabel = UILabel().then {
-        $0.text = "254억원"
+        $0.text = ""
     }
     private var winnerLabel: UILabel = UILabel().then {
-        $0.text = "(10명 / 25억)"
+        $0.text = ""
     }
     private var leftButton: UIButton = UIButton().then {
         let imageConfig = UIImage.SymbolConfiguration(pointSize: 30, weight: .light)
@@ -61,8 +61,7 @@ class LottoViewController: UIViewController {
         addSubviews()
         makeConstraints()
         
-        leftButton.addTarget(self, action: #selector(leftButtonTapped), for: .touchUpInside)
-        rightButton.addTarget(self, action: #selector(rightButtonTapped), for: .touchUpInside)
+        setButtonClickEvent()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -93,8 +92,13 @@ class LottoViewController: UIViewController {
             
             print(info)
             self.priceLabel.text = "\(info.firstAccumamnt.hundredMillion())"
-            self.winnerLabel.text = "(\(info.firstPrzwnerCo)명 / \(info.firstWinamnt.hundredMillion()))"
+            self.winnerLabel.text = info.firstPrzwnerCo.unit(.numberOfPeople) + "/" + info.firstWinamnt.hundredMillion()
         }
+    }
+    
+    private func setButtonClickEvent() {
+        leftButton.addTarget(self, action: #selector(leftButtonTapped), for: .touchUpInside)
+        rightButton.addTarget(self, action: #selector(rightButtonTapped), for: .touchUpInside)
     }
     
     @objc private func leftButtonTapped() {
