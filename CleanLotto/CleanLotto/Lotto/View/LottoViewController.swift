@@ -24,10 +24,7 @@ class LottoViewController: UIViewController {
     private var dateLabel: UILabel = UILabel().then {
         $0.text = ""
     }
-    private var lottoBallContainerView: UIStackView = UIStackView().then {
-        $0.axis = .horizontal
-        $0.distribution = .fillEqually
-    }
+    private var lottoBallContainerView: LottoBallContainer = LottoBallContainer()
     private var winnerPriceView: UIView = UIView()
     private var priceLabel: UILabel = UILabel().then {
         $0.text = ""
@@ -81,18 +78,10 @@ class LottoViewController: UIViewController {
         DispatchQueue.main.async {
             self.lottoRoundTextField.text = "\(info.drwNo)"
             self.dateLabel.text = info.drwNoDate
-            self.lottoBallContainerView.arrangedSubviews.forEach { $0.removeFromSuperview() }
-            
-            self.lottoBallContainerView.addArrangedSubview(BallView(info.drwtNo1))
-            self.lottoBallContainerView.addArrangedSubview(BallView(info.drwtNo2))
-            self.lottoBallContainerView.addArrangedSubview(BallView(info.drwtNo3))
-            self.lottoBallContainerView.addArrangedSubview(BallView(info.drwtNo4))
-            self.lottoBallContainerView.addArrangedSubview(BallView(info.drwtNo5))
-            self.lottoBallContainerView.addArrangedSubview(BallView(info.drwtNo6))
-            
-            print(info)
+            let balls = [info.drwtNo1, info.drwtNo2, info.drwtNo3, info.drwtNo4, info.drwtNo5, info.drwtNo6]
+            self.lottoBallContainerView.addLotto(balls)
             self.priceLabel.text = "\(info.firstAccumamnt.hundredMillion())"
-            self.winnerLabel.text = info.firstPrzwnerCo.unit(.numberOfPeople) + "/" + info.firstWinamnt.hundredMillion()
+            self.winnerLabel.text = "\(info.firstPrzwnerCo.unit(.numberOfPeople)) / \(info.firstWinamnt.hundredMillion())"
         }
     }
     

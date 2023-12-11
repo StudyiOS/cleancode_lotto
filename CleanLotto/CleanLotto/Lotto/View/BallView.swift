@@ -31,10 +31,6 @@ class BallView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    private func makeBallColor() {
-        ballColors
-    }
 }
 
 extension BallView: UISubviewStyle {
