@@ -11,7 +11,7 @@ final class LottoViewController: UIViewController {
     
     @IBOutlet weak private var winBackView: UIView!
     @IBOutlet weak private var bonusBackView: UIView!
-    @IBOutlet weak private var drwNoLabel: UILabel!
+    @IBOutlet weak private var drwNumLabel: UILabel!
     @IBOutlet weak private var drwNoDateLabel: UILabel!
     @IBOutlet private var ballColorViews: [UIView]!
     @IBOutlet private var drwtNoLabels: [UILabel]!
@@ -20,7 +20,15 @@ final class LottoViewController: UIViewController {
     @IBOutlet weak private var selectionButton: UIButton!
     
     private let lottoRoundPicker = UIPickerView()
+    // FIXME: - ballColors는 어떤 의미인지 명확하게 표현
     private let ballColors: [UIColor] = [.systemYellow, .systemBlue, .systemRed, .darkGray, .systemGreen]
+    
+    private let oneToTenColor = UIColor.systemYellow
+    private let elevenToTwentyColor = UIColor.systemBlue
+    private let twentyOneToThirtyColor = UIColor.systemRed
+    private let thirtyOneToFortyColor = UIColor.darkGray
+    private let fortyOneToFiftyColor = UIColor.systemGreen
+    
     private var lottoRoundList: [Int] = []
     private let networkManager = NetworkManager<LottoAPIService>()
     
@@ -40,8 +48,7 @@ final class LottoViewController: UIViewController {
     
     private func configureUI() {
         setupLayout()
-        numberTextField.tintColor = .clear
-        numberTextField.inputView = lottoRoundPicker
+        setupTextField()
     }
     
     private func setupLayout() {
@@ -51,6 +58,11 @@ final class LottoViewController: UIViewController {
         }
         winBackView.layer.cornerRadius = 10
         bonusBackView.layer.cornerRadius = 10
+    }
+    
+    private func setupTextField() {
+        numberTextField.tintColor = .clear
+        numberTextField.inputView = lottoRoundPicker
     }
     
     private func configureDelegate() {
@@ -75,9 +87,9 @@ final class LottoViewController: UIViewController {
     
     private func updateUI(_ response: LottoResponse) {
         updateBallColors(response)
-        updateNoLabels(response)
+        updateNumLabels(response)
         firstWinamntLabel.text = convertNumberFormat(with: response.firstWinamnt)
-        drwNoLabel.text = "\(response.drwNo)회"
+        drwNumLabel.text = "\(response.drwNo)회"
         drwNoDateLabel.text = convertDateString(with: response.drwNoDate)
     }
     
@@ -91,7 +103,7 @@ final class LottoViewController: UIViewController {
         ballColorViews[6].backgroundColor = ballColors[(response.bnusNo - 1) / 10]
     }
     
-    private func updateNoLabels(_ response: LottoResponse) {
+    private func updateNumLabels(_ response: LottoResponse) {
         drwtNoLabels[0].text = "\(response.drwtNo1)"
         drwtNoLabels[1].text = "\(response.drwtNo2)"
         drwtNoLabels[2].text = "\(response.drwtNo3)"

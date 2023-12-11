@@ -26,6 +26,7 @@
 		55FB4A392B27265500FEADFD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 55FB4A382B27265500FEADFD /* RxCocoa */; };
 		55FB4A3B2B27265800FEADFD /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 55FB4A3A2B27265800FEADFD /* RxRelay */; };
 		55FB4A3D2B27265C00FEADFD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 55FB4A3C2B27265C00FEADFD /* RxSwift */; };
+		55FB4A412B27605F00FEADFD /* UIColor+Exension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB4A402B27605F00FEADFD /* UIColor+Exension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		551495F32B24CDC4000FE884 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		551495F52B24CE96000FE884 /* LottoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoResponse.swift; sourceTree = "<group>"; };
 		55FB4A302B2724C200FEADFD /* LottoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
+		55FB4A402B27605F00FEADFD /* UIColor+Exension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Exension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				551495D12B24C1C7000FE884 /* Info.plist */,
 				55FB4A302B2724C200FEADFD /* LottoViewController.swift */,
 				551495F22B24CDB3000FE884 /* Network */,
+				55FB4A402B27605F00FEADFD /* UIColor+Exension.swift */,
 			);
 			path = CleanLotto;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				551495F42B24CDC4000FE884 /* NetworkManager.swift in Sources */,
 				551495C82B24C1C6000FE884 /* ViewController.swift in Sources */,
+				55FB4A412B27605F00FEADFD /* UIColor+Exension.swift in Sources */,
 				551495E42B24C3B5000FE884 /* LottoAPIService.swift in Sources */,
 				55FB4A312B2724C200FEADFD /* LottoViewController.swift in Sources */,
 				551495F62B24CE96000FE884 /* LottoResponse.swift in Sources */,

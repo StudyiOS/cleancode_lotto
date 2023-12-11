@@ -8,18 +8,25 @@
 import Foundation
 
 struct LottoResponse: Decodable {
-    let totSellamnt: Int
-    let returnValue: String
-    let drwNoDate: String
-    let firstWinamnt: Int
-    let drwtNo6: Int
-    let drwtNo4: Int
-    let firstPrzwnerCo: Int
-    let drwtNo5: Int
-    let bnusNo: Int
-    let firstAccumamnt: Int
+    
     let drwNo: Int
+    let drwtNo1: Int
     let drwtNo2: Int
     let drwtNo3: Int
-    let drwtNo1: Int
+    let drwtNo4: Int
+    let drwtNo5: Int
+    let drwtNo6: Int
+    let bnusNo: Int
+    let drwNoDate: String
+    let firstAccumamnt: Int
+    let firstPrzwnerCo: Int
+    let firstWinamnt: Int
+    let returnValue: String
+    let totSellamnt: Int
+}
+
+extension LottoResponse {
+    var drwtNumbers: [Int] {
+        return [drwtNo1, drwtNo2, drwtNo3, drwtNo4, drwtNo5, drwtNo6, bnusNo]
+    }
 }
