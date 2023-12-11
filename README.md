@@ -33,3 +33,21 @@
 ### API
 
 * http://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(num)
+
+- - -
+
+## 구현사항
+
+* 기능 설명
+
+    - 초기 화면 : 1096회 당첨결과 보여줌
+    - 왼쪽, 오른쪽 버튼 클릭 시, 각각 이전, 이후 회차 당첨결과 및 정보 보여줌
+    - 회차 번호는 TextField 형태로 키보드 입력 가능
+
+* 구조
+
+<img src="./img/clean_lotto_struct.png" width="50%"> 
+
+* 구현 미리보기
+
+<img src="./img/preview.gif" width="30%"> 
