@@ -25,6 +25,7 @@ extension MainView {
                 .font(.title)
         }
     }
+    
     private func drawBodyOfTitle(with date: String) -> Text {
         Text("(\(date) 추첨)")
             .font(.footnote)

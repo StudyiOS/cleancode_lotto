@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel: MainViewModel
-    @State var winningRound: Int = 1095
+    @State var winningRound: Int = MainViewModel.INITIAL_ROUND
 
     var body: some View {
         Group {
@@ -23,7 +23,7 @@ struct MainView: View {
                 }
                 .padding()
             } else {
-                Text("로딩중")
+                Text("Loading...")
             }
         }
         .foregroundStyle(Color.text)

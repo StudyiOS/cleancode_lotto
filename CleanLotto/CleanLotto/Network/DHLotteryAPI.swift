@@ -8,10 +8,6 @@
 import Foundation
 import Combine
 
-// BASE = "http://www.dhlottery.co.kr/common.do?
-// METHOD = getLottoNumber
-// PARAM = &drwNo=\(num)"
-
 enum DHLotteryAPI {
     static let BASE = "http://www.dhlottery.co.kr/common.do?"
 

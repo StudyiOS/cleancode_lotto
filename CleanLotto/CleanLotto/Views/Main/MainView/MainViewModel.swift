@@ -11,9 +11,10 @@ import Combine
 extension MainView {
     final class MainViewModel: ObservableObject {
         private var bag: Set<AnyCancellable> = []
+        static let INITIAL_ROUND = 1095
 
         @Published var lotto: WinningLotto?
-        @Published var round: Int = 1095
+        @Published var round: Int = INITIAL_ROUND
 
         init() {
             bind()
