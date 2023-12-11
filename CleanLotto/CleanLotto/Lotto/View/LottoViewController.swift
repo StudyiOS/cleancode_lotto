@@ -11,6 +11,8 @@ import Then
 
 class LottoViewController: UIViewController {
     
+    // MARK: - Items
+    
     private var titleView: UIView = UIView()
     private var lottoRoundTextField: UITextField = UITextField().then {
         $0.text = "1097"
@@ -51,8 +53,14 @@ class LottoViewController: UIViewController {
         $0.tintColor = .black
     }
     
+    
+    // MARK: - VM
+    
     private let viewModel = LottoViewModel()
 
+    
+    // MARK: - ViewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -68,11 +76,17 @@ class LottoViewController: UIViewController {
         setButtonClickEvent()
     }
     
+    
+    // MARK: - Touch Event
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         guard let round = lottoRoundTextField.text else { return }
         viewModel.textRoundEvent = Int(round) ?? 1
     }
+    
+    
+    // MARK: - Binding
     
     private func bindViewModel() {
         viewModel.updateRoundInfo = { [weak self] info in
@@ -91,19 +105,25 @@ class LottoViewController: UIViewController {
         }
     }
     
+    
+    // MARK: - Click Event
+    
     private func setButtonClickEvent() {
         leftButton.addTarget(self, action: #selector(leftButtonTapped), for: .touchUpInside)
         rightButton.addTarget(self, action: #selector(rightButtonTapped), for: .touchUpInside)
     }
     
     @objc private func leftButtonTapped() {
-        viewModel.prevRoundTapEvent = true
+        viewModel.changeRound(.previous)
     }
     
     @objc private func rightButtonTapped() {
-        viewModel.nextRoundTapEvent = true
+        viewModel.changeRound(.next)
     }
 }
+
+
+// MARK: - SubView Style
 
 extension LottoViewController: UISubviewStyle {
     func addSubviews() {
