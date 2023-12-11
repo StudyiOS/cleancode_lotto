@@ -19,8 +19,8 @@ struct LottoBall {
     }
     
     static private func setColor(_ number: Int) -> String {
-        let ballColors: [String] = ["#ffff00", "#0091e4", "#a52a2a", "#b3b7bf", "#00ff00"]
-        return ballColors[Int(number / 10)]
+        let digit = Int(number / 10)
+        return BallColorType.allCases[digit].hexColor
     }
     
     enum BallType {

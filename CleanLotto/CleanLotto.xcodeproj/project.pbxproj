@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453088E92B27670400E199B9 /* BallColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088E82B27670400E199B9 /* BallColorType.swift */; };
+		453088EB2B2767C200E199B9 /* ChangeRoundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088EA2B2767C200E199B9 /* ChangeRoundType.swift */; };
 		454EB4DB2B26D45C0038B260 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 454EB4DA2B26D45C0038B260 /* Localizable.xcstrings */; };
 		454EB4DD2B26E0EC0038B260 /* LottoBallContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454EB4DC2B26E0EC0038B260 /* LottoBallContainer.swift */; };
 		454EB4E02B26E7C40038B260 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454EB4DF2B26E7C40038B260 /* Color+.swift */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		453088E82B27670400E199B9 /* BallColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallColorType.swift; sourceTree = "<group>"; };
+		453088EA2B2767C200E199B9 /* ChangeRoundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRoundType.swift; sourceTree = "<group>"; };
 		454EB4DA2B26D45C0038B260 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		454EB4DC2B26E0EC0038B260 /* LottoBallContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoBallContainer.swift; sourceTree = "<group>"; };
 		454EB4DF2B26E7C40038B260 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				45D285122B24468400A52035 /* LottoViewModel.swift */,
+				453088EA2B2767C200E199B9 /* ChangeRoundType.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			children = (
 				45D285182B24488600A52035 /* LottoBall.swift */,
 				45D2851A2B24530300A52035 /* LottoInfo.swift */,
+				453088E82B27670400E199B9 /* BallColorType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,7 +355,9 @@
 				45D2851B2B24530300A52035 /* LottoInfo.swift in Sources */,
 				45D2851D2B245B3B00A52035 /* UISubviewStyle.swift in Sources */,
 				454EB4DD2B26E0EC0038B260 /* LottoBallContainer.swift in Sources */,
+				453088E92B27670400E199B9 /* BallColorType.swift in Sources */,
 				45D285212B26C86300A52035 /* Int+.swift in Sources */,
+				453088EB2B2767C200E199B9 /* ChangeRoundType.swift in Sources */,
 				45D284DB2B2438B600A52035 /* AppDelegate.swift in Sources */,
 				454EB4E02B26E7C40038B260 /* Color+.swift in Sources */,
 				45D285192B24488600A52035 /* LottoBall.swift in Sources */,
