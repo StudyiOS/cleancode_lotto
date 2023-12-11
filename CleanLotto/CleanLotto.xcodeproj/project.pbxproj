@@ -22,6 +22,10 @@
 		551495EC2B24C52C000FE884 /* CleanLottoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551495EB2B24C52C000FE884 /* CleanLottoTests.swift */; };
 		551495F42B24CDC4000FE884 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551495F32B24CDC4000FE884 /* NetworkManager.swift */; };
 		551495F62B24CE96000FE884 /* LottoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551495F52B24CE96000FE884 /* LottoResponse.swift */; };
+		55FB4A312B2724C200FEADFD /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB4A302B2724C200FEADFD /* LottoViewController.swift */; };
+		55FB4A392B27265500FEADFD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 55FB4A382B27265500FEADFD /* RxCocoa */; };
+		55FB4A3B2B27265800FEADFD /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 55FB4A3A2B27265800FEADFD /* RxRelay */; };
+		55FB4A3D2B27265C00FEADFD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 55FB4A3C2B27265C00FEADFD /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,7 @@
 		551495EB2B24C52C000FE884 /* CleanLottoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanLottoTests.swift; sourceTree = "<group>"; };
 		551495F32B24CDC4000FE884 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		551495F52B24CE96000FE884 /* LottoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoResponse.swift; sourceTree = "<group>"; };
+		55FB4A302B2724C200FEADFD /* LottoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +60,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55FB4A392B27265500FEADFD /* RxCocoa in Frameworks */,
 				551495E22B24C355000FE884 /* RxMoya in Frameworks */,
+				55FB4A3B2B27265800FEADFD /* RxRelay in Frameworks */,
 				551495DC2B24C355000FE884 /* CombineMoya in Frameworks */,
 				551495E02B24C355000FE884 /* ReactiveMoya in Frameworks */,
 				551495D92B24C30A000FE884 /* JimmyKit in Frameworks */,
+				55FB4A3D2B27265C00FEADFD /* RxSwift in Frameworks */,
 				551495DE2B24C355000FE884 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +87,7 @@
 				551495C22B24C1C6000FE884 /* CleanLotto */,
 				551495EA2B24C52C000FE884 /* CleanLottoTests */,
 				551495C12B24C1C6000FE884 /* Products */,
+				55FB4A372B27265500FEADFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +110,7 @@
 				551495CC2B24C1C7000FE884 /* Assets.xcassets */,
 				551495CE2B24C1C7000FE884 /* LaunchScreen.storyboard */,
 				551495D12B24C1C7000FE884 /* Info.plist */,
+				55FB4A302B2724C200FEADFD /* LottoViewController.swift */,
 				551495F22B24CDB3000FE884 /* Network */,
 			);
 			path = CleanLotto;
@@ -122,6 +132,13 @@
 				551495F52B24CE96000FE884 /* LottoResponse.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		55FB4A372B27265500FEADFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +163,9 @@
 				551495DD2B24C355000FE884 /* Moya */,
 				551495DF2B24C355000FE884 /* ReactiveMoya */,
 				551495E12B24C355000FE884 /* RxMoya */,
+				55FB4A382B27265500FEADFD /* RxCocoa */,
+				55FB4A3A2B27265800FEADFD /* RxRelay */,
+				55FB4A3C2B27265C00FEADFD /* RxSwift */,
 			);
 			productName = CleanLotto;
 			productReference = 551495C02B24C1C6000FE884 /* CleanLotto.app */;
@@ -200,6 +220,7 @@
 			packageReferences = (
 				551495D72B24C30A000FE884 /* XCRemoteSwiftPackageReference "JimmyKit" */,
 				551495DA2B24C355000FE884 /* XCRemoteSwiftPackageReference "Moya" */,
+				55FB4A362B27260700FEADFD /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 551495C12B24C1C6000FE884 /* Products */;
 			projectDirPath = "";
@@ -239,6 +260,7 @@
 				551495F42B24CDC4000FE884 /* NetworkManager.swift in Sources */,
 				551495C82B24C1C6000FE884 /* ViewController.swift in Sources */,
 				551495E42B24C3B5000FE884 /* LottoAPIService.swift in Sources */,
+				55FB4A312B2724C200FEADFD /* LottoViewController.swift in Sources */,
 				551495F62B24CE96000FE884 /* LottoResponse.swift in Sources */,
 				551495C42B24C1C6000FE884 /* AppDelegate.swift in Sources */,
 				551495C62B24C1C6000FE884 /* SceneDelegate.swift in Sources */,
@@ -545,6 +567,14 @@
 				minimumVersion = 15.0.3;
 			};
 		};
+		55FB4A362B27260700FEADFD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -572,6 +602,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 551495DA2B24C355000FE884 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		55FB4A382B27265500FEADFD /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55FB4A362B27260700FEADFD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		55FB4A3A2B27265800FEADFD /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55FB4A362B27260700FEADFD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		55FB4A3C2B27265C00FEADFD /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55FB4A362B27260700FEADFD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
