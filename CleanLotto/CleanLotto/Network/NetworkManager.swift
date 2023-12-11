@@ -35,26 +35,3 @@ class NetworkManager {
         }
     }
 }
-
-enum ErrorType: Error {
-    case urlError
-    case emptyDataError
-    case noSuccessError
-    case decoderError
-    case networkManagerError
-    
-    var description: String {
-        switch self {
-            case .urlError:
-                return "url을 다시 확인해보세요."
-            case .emptyDataError:
-                return "response data가 값이 없습니다."
-            case .noSuccessError:
-                return "response error 입니다."
-            case .decoderError:
-                return "response decode 에러입니다."
-            case .networkManagerError:
-                return "networkManager 에러입니다."
-        }
-    }
-}

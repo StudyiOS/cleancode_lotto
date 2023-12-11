@@ -13,6 +13,7 @@
 		453088F32B277AD200E199B9 /* LottoInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088F22B277AD200E199B9 /* LottoInfoView.swift */; };
 		453088F52B277D0D00E199B9 /* SubTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088F42B277D0D00E199B9 /* SubTitleView.swift */; };
 		453088F72B277EE700E199B9 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088F62B277EE700E199B9 /* TitleView.swift */; };
+		453088F92B27838200E199B9 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088F82B27838200E199B9 /* ErrorType.swift */; };
 		454EB4DB2B26D45C0038B260 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 454EB4DA2B26D45C0038B260 /* Localizable.xcstrings */; };
 		454EB4DD2B26E0EC0038B260 /* LottoBallContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454EB4DC2B26E0EC0038B260 /* LottoBallContainer.swift */; };
 		454EB4E02B26E7C40038B260 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454EB4DF2B26E7C40038B260 /* Color+.swift */; };
@@ -58,6 +59,7 @@
 		453088F22B277AD200E199B9 /* LottoInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoInfoView.swift; sourceTree = "<group>"; };
 		453088F42B277D0D00E199B9 /* SubTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleView.swift; sourceTree = "<group>"; };
 		453088F62B277EE700E199B9 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		453088F82B27838200E199B9 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		454EB4DA2B26D45C0038B260 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		454EB4DC2B26E0EC0038B260 /* LottoBallContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoBallContainer.swift; sourceTree = "<group>"; };
 		454EB4DF2B26E7C40038B260 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				453088F02B276B9C00E199B9 /* NetworkManager.swift */,
+				453088F82B27838200E199B9 /* ErrorType.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				453088F12B276B9C00E199B9 /* NetworkManager.swift in Sources */,
 				453088E92B27670400E199B9 /* BallColorType.swift in Sources */,
 				45D285212B26C86300A52035 /* Int+.swift in Sources */,
+				453088F92B27838200E199B9 /* ErrorType.swift in Sources */,
 				453088F32B277AD200E199B9 /* LottoInfoView.swift in Sources */,
 				453088EB2B2767C200E199B9 /* ChangeRoundType.swift in Sources */,
 				453088F72B277EE700E199B9 /* TitleView.swift in Sources */,

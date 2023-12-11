@@ -81,7 +81,7 @@ class LottoViewController: UIViewController {
     }
     
     private func showAlert(of errorType: ErrorType) {
-        let alert = UIAlertController(title: "에러!!",
+        let alert = UIAlertController(title: NSLocalizedString("Lotto.error_alert_title", comment: ""),
                                       message: errorType.description,
                                       preferredStyle: .alert)
         let okAction =  UIAlertAction(title: "ok", style: UIAlertAction.Style.default)
