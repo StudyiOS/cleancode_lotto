@@ -23,6 +23,26 @@
         }
       }
     },
+    "Lotto.winning_number" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "당첨번호"
+          }
+        }
+      }
+    },
+    "Lotto.winning_number_bonus" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "보너스"
+          }
+        }
+      }
+    },
     "Lotto.winning_result" : {
       "extractionState" : "manual",
       "localizations" : {

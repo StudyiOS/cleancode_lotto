@@ -24,6 +24,12 @@ class LottoViewController: UIViewController {
     private var dateLabel: UILabel = UILabel().then {
         $0.text = ""
     }
+    private var subTitleOfWinningNumber: UILabel = UILabel().then {
+        $0.text = NSLocalizedString("Lotto.winning_number", comment: "")
+    }
+    private var subTitleOfBonus: UILabel = UILabel().then {
+        $0.text = NSLocalizedString("Lotto.winning_number_bonus", comment: "")
+    }
     private var lottoBallContainerView: LottoBallContainer = LottoBallContainer()
     private var winnerPriceView: UIView = UIView()
     private var priceLabel: UILabel = UILabel().then {
@@ -50,6 +56,7 @@ class LottoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
+        self.title = "CleanLotto"
         
         viewModel.fetchLottoNumber()
         
@@ -78,10 +85,9 @@ class LottoViewController: UIViewController {
         DispatchQueue.main.async {
             self.lottoRoundTextField.text = "\(info.drwNo)"
             self.dateLabel.text = info.drwNoDate
-            let balls = [info.drwtNo1, info.drwtNo2, info.drwtNo3, info.drwtNo4, info.drwtNo5, info.drwtNo6]
-            self.lottoBallContainerView.addLotto(balls)
+            self.lottoBallContainerView.addLottoBalls(by: info.makeLottoBalls())
             self.priceLabel.text = "\(info.firstAccumamnt.hundredMillion())"
-            self.winnerLabel.text = "\(info.firstPrzwnerCo.unit(.numberOfPeople)) / \(info.firstWinamnt.hundredMillion())"
+            self.winnerLabel.text = "( \(info.firstPrzwnerCo.unit(.numberOfPeople)) / \(info.firstWinamnt.hundredMillion()) )"
         }
     }
     
@@ -105,6 +111,8 @@ extension LottoViewController: UISubviewStyle {
         titleView.addSubview(lottoRoundTextField)
         titleView.addSubview(lottoTitleLabel)
         self.view.addSubview(dateLabel)
+        self.view.addSubview(subTitleOfWinningNumber)
+        self.view.addSubview(subTitleOfBonus)
         self.view.addSubview(lottoBallContainerView)
         self.view.addSubview(winnerPriceView)
         winnerPriceView.addSubview(priceLabel)
@@ -135,8 +143,16 @@ extension LottoViewController: UISubviewStyle {
             $0.centerX.equalToSuperview()
             $0.top.equalTo(titleView.snp.bottom).offset(50)
         }
-        lottoBallContainerView.snp.makeConstraints {
+        subTitleOfWinningNumber.snp.makeConstraints {
             $0.top.equalTo(dateLabel.snp.bottom).offset(50)
+            $0.leading.equalToSuperview().offset(130)
+        }
+        subTitleOfBonus.snp.makeConstraints {
+            $0.top.equalTo(dateLabel.snp.bottom).offset(50)
+            $0.trailing.equalToSuperview().offset(-20)
+        }
+        lottoBallContainerView.snp.makeConstraints {
+            $0.top.equalTo(subTitleOfWinningNumber.snp.bottom).offset(50)
             $0.leading.equalToSuperview().offset(30)
             $0.trailing.equalToSuperview().offset(-30)
             $0.height.equalTo(50)
@@ -155,7 +171,7 @@ extension LottoViewController: UISubviewStyle {
             $0.top.equalToSuperview()
             $0.leading.equalTo(priceLabel.snp.trailing).offset(10)
             $0.trailing.equalToSuperview()
-            $0.width.equalTo(100)
+            $0.width.equalTo(120)
             $0.height.equalTo(30)
         }
         leftButton.snp.makeConstraints {

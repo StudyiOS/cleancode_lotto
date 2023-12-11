@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		454EB4DB2B26D45C0038B260 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 454EB4DA2B26D45C0038B260 /* Localizable.xcstrings */; };
 		454EB4DD2B26E0EC0038B260 /* LottoBallContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454EB4DC2B26E0EC0038B260 /* LottoBallContainer.swift */; };
+		454EB4E02B26E7C40038B260 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454EB4DF2B26E7C40038B260 /* Color+.swift */; };
 		45D284DB2B2438B600A52035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D284DA2B2438B600A52035 /* AppDelegate.swift */; };
 		45D284DD2B2438B600A52035 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D284DC2B2438B600A52035 /* SceneDelegate.swift */; };
 		45D284DF2B2438B600A52035 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D284DE2B2438B600A52035 /* LottoViewController.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		454EB4DA2B26D45C0038B260 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		454EB4DC2B26E0EC0038B260 /* LottoBallContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoBallContainer.swift; sourceTree = "<group>"; };
+		454EB4DF2B26E7C40038B260 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		45D284D72B2438B600A52035 /* CleanLotto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanLotto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D284DA2B2438B600A52035 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45D284DC2B2438B600A52035 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		454EB4DE2B26E7B80038B260 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				45D285202B26C86300A52035 /* Int+.swift */,
+				454EB4DF2B26E7C40038B260 /* Color+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		454EB4E12B26F1780038B260 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				45D2851E2B24651B00A52035 /* BallView.swift */,
+				454EB4DC2B26E0EC0038B260 /* LottoBallContainer.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		45D284CE2B2438B600A52035 = {
 			isa = PBXGroup;
 			children = (
@@ -118,12 +138,12 @@
 			isa = PBXGroup;
 			children = (
 				45D285162B2446D500A52035 /* Lotto */,
+				454EB4DE2B26E7B80038B260 /* Extension */,
 				45D284DA2B2438B600A52035 /* AppDelegate.swift */,
 				45D284DC2B2438B600A52035 /* SceneDelegate.swift */,
 				45D284E32B2438B700A52035 /* Assets.xcassets */,
 				45D284E52B2438B700A52035 /* LaunchScreen.storyboard */,
 				45D284E82B2438B700A52035 /* Info.plist */,
-				45D285202B26C86300A52035 /* Int+.swift */,
 				454EB4DA2B26D45C0038B260 /* Localizable.xcstrings */,
 			);
 			path = CleanLotto;
@@ -150,8 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				45D284DE2B2438B600A52035 /* LottoViewController.swift */,
-				45D2851E2B24651B00A52035 /* BallView.swift */,
-				454EB4DC2B26E0EC0038B260 /* LottoBallContainer.swift */,
+				454EB4E12B26F1780038B260 /* SubViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,6 +351,7 @@
 				454EB4DD2B26E0EC0038B260 /* LottoBallContainer.swift in Sources */,
 				45D285212B26C86300A52035 /* Int+.swift in Sources */,
 				45D284DB2B2438B600A52035 /* AppDelegate.swift in Sources */,
+				454EB4E02B26E7C40038B260 /* Color+.swift in Sources */,
 				45D285192B24488600A52035 /* LottoBall.swift in Sources */,
 				45D284DD2B2438B600A52035 /* SceneDelegate.swift in Sources */,
 			);

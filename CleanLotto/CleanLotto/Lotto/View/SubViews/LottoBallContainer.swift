@@ -18,9 +18,9 @@ class LottoBallContainer: UIStackView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func addLotto(_ balls: [Int]) {
-        guard !balls.isEmpty else { return }
+    func addLottoBalls(by balls: [LottoBall]) {
         self.arrangedSubviews.forEach { $0.removeFromSuperview() }
         balls.forEach { self.addArrangedSubview(BallView($0)) }
+        self.subviews.forEach { self.setCustomSpacing(30, after: $0) }
     }
 }
