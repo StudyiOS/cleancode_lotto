@@ -20,9 +20,13 @@
 		B3FE88AA2B2594B9007C4804 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88A92B2594B9007C4804 /* MainViewModel.swift */; };
 		B3FE88AE2B259E64007C4804 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88AD2B259E64007C4804 /* Color+.swift */; };
 		B3FE88B02B25E890007C4804 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88AF2B25E890007C4804 /* View+.swift */; };
-		B3FE88B22B25EA7A007C4804 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88B12B25EA7A007C4804 /* Optional+.swift */; };
+		B3FE88B22B25EA7A007C4804 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88B12B25EA7A007C4804 /* Numeric.swift */; };
 		B3FE88B42B25EEF7007C4804 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88B32B25EEF7007C4804 /* Int+.swift */; };
-		B3FE88B72B25F469007C4804 /* MainViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88B62B25F469007C4804 /* MainViewComponents.swift */; };
+		B3FE88B92B272CAF007C4804 /* MainViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88B82B272CAF007C4804 /* MainViewHeader.swift */; };
+		B3FE88BB2B272CC5007C4804 /* MainViewWinningTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88BA2B272CC5007C4804 /* MainViewWinningTitle.swift */; };
+		B3FE88BD2B272CD7007C4804 /* WinningNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88BC2B272CD7007C4804 /* WinningNumbers.swift */; };
+		B3FE88BF2B272CEC007C4804 /* WinningAmountTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88BE2B272CEC007C4804 /* WinningAmountTable.swift */; };
+		B3FE88C12B272D7A007C4804 /* WinningRoundPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE88C02B272D7A007C4804 /* WinningRoundPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +64,13 @@
 		B3FE88AB2B259D2A007C4804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B3FE88AD2B259E64007C4804 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		B3FE88AF2B25E890007C4804 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
-		B3FE88B12B25EA7A007C4804 /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+.swift"; sourceTree = "<group>"; };
+		B3FE88B12B25EA7A007C4804 /* Numeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numeric.swift; sourceTree = "<group>"; };
 		B3FE88B32B25EEF7007C4804 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
-		B3FE88B62B25F469007C4804 /* MainViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewComponents.swift; sourceTree = "<group>"; };
+		B3FE88B82B272CAF007C4804 /* MainViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewHeader.swift; sourceTree = "<group>"; };
+		B3FE88BA2B272CC5007C4804 /* MainViewWinningTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewWinningTitle.swift; sourceTree = "<group>"; };
+		B3FE88BC2B272CD7007C4804 /* WinningNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningNumbers.swift; sourceTree = "<group>"; };
+		B3FE88BE2B272CEC007C4804 /* WinningAmountTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningAmountTable.swift; sourceTree = "<group>"; };
+		B3FE88C02B272D7A007C4804 /* WinningRoundPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningRoundPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +206,7 @@
 			children = (
 				B3FE88AD2B259E64007C4804 /* Color+.swift */,
 				B3FE88AF2B25E890007C4804 /* View+.swift */,
-				B3FE88B12B25EA7A007C4804 /* Optional+.swift */,
+				B3FE88B12B25EA7A007C4804 /* Numeric.swift */,
 				B3FE88B32B25EEF7007C4804 /* Int+.swift */,
 			);
 			path = Extensions;
@@ -207,7 +215,11 @@
 		B3FE88B52B25F43E007C4804 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B3FE88B62B25F469007C4804 /* MainViewComponents.swift */,
+				B3FE88B82B272CAF007C4804 /* MainViewHeader.swift */,
+				B3FE88BA2B272CC5007C4804 /* MainViewWinningTitle.swift */,
+				B3FE88BC2B272CD7007C4804 /* WinningNumbers.swift */,
+				B3FE88BE2B272CEC007C4804 /* WinningAmountTable.swift */,
+				B3FE88C02B272D7A007C4804 /* WinningRoundPicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -350,10 +362,14 @@
 				B3FE88A82B258899007C4804 /* DHLottoNumber.swift in Sources */,
 				B3FE88B02B25E890007C4804 /* View+.swift in Sources */,
 				B3FE889C2B244BAA007C4804 /* DHLotteryAPI.swift in Sources */,
+				B3FE88C12B272D7A007C4804 /* WinningRoundPicker.swift in Sources */,
+				B3FE88BF2B272CEC007C4804 /* WinningAmountTable.swift in Sources */,
+				B3FE88BB2B272CC5007C4804 /* MainViewWinningTitle.swift in Sources */,
 				B3FE88672B240A56007C4804 /* CleanLottoApp.swift in Sources */,
 				B3FE88B42B25EEF7007C4804 /* Int+.swift in Sources */,
-				B3FE88B72B25F469007C4804 /* MainViewComponents.swift in Sources */,
-				B3FE88B22B25EA7A007C4804 /* Optional+.swift in Sources */,
+				B3FE88B92B272CAF007C4804 /* MainViewHeader.swift in Sources */,
+				B3FE88BD2B272CD7007C4804 /* WinningNumbers.swift in Sources */,
+				B3FE88B22B25EA7A007C4804 /* Numeric.swift in Sources */,
 				B3FE88AA2B2594B9007C4804 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

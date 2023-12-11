@@ -1,5 +1,5 @@
 //
-//  Optional+.swift
+//  Numeric+.swift
 //  CleanLotto
 //
 //  Created by Leo on 12/10/23.
