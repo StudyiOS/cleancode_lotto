@@ -8,7 +8,11 @@
 import Foundation
 
 class LottoViewModel {
-    private var lottoInfo: LottoInfo?
+    private var lottoInfo: LottoInfo? {
+        didSet {
+            updateRoundInfo(lottoInfo)
+        }
+    }
     private(set) var currentRound: Int = 1096
     
     // Input (VC -> VM)
@@ -16,12 +20,14 @@ class LottoViewModel {
         didSet {
             currentRound -= 1
             fetchLottoNumber()
+            prevRoundTapEvent = false
         }
     }
     var nextRoundTapEvent: Bool = false {
         didSet {
             currentRound += 1
             fetchLottoNumber()
+            nextRoundTapEvent = false
         }
     }
     var textRoundEvent: Int = 0 {
@@ -32,7 +38,7 @@ class LottoViewModel {
     }
     
     // Output (VM -> VC)
-    var updateRoundInfo: (LottoInfo) -> Void = { _ in }
+    var updateRoundInfo: (LottoInfo?) -> Void = { _ in }
     
     
     // method
@@ -53,7 +59,6 @@ class LottoViewModel {
                 if successRange.contains(response.statusCode) {
                     guard let lottoInfo: LottoInfo = try? JSONDecoder().decode(LottoInfo.self, from: data) else { return }
                     self.lottoInfo = lottoInfo
-                    self.updateRoundInfo(lottoInfo)
                 } else {
                     print("error")
                 }
