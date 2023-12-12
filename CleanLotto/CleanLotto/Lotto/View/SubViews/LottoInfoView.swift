@@ -12,8 +12,12 @@ class LottoInfoView: UIView {
     private var subTitleView: SubTitleView = SubTitleView()
     private var lottoBallContainerView: LottoBallContainer = LottoBallContainer()
     private var winnerPriceView: UIView = UIView()
-    private var priceLabel: UILabel = UILabel()
-    private var winnerLabel: UILabel = UILabel()
+    private var priceLabel: UILabel = UILabel().then {
+        $0.textAlignment = .center
+    }
+    private var winnerLabel: UILabel = UILabel().then {
+        $0.textAlignment = .center
+    }
     private var leftButton: UIButton = UIButton().then {
         let imageConfig = UIImage.SymbolConfiguration(pointSize: 30, weight: .light)
         let image = UIImage(systemName: "chevron.left.circle", withConfiguration: imageConfig)
@@ -60,10 +64,11 @@ extension LottoInfoView: UISubviewStyle {
     func makeConstraints() {
         dateLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalToSuperview().offset(50)
+            $0.top.equalToSuperview()
         }
         subTitleView.snp.makeConstraints {
-            $0.top.leading.trailing.equalToSuperview()
+            $0.top.equalTo(dateLabel.snp.bottom).offset(30)
+            $0.leading.trailing.equalToSuperview()
         }
         lottoBallContainerView.snp.makeConstraints {
             $0.top.equalTo(subTitleView.snp.bottom).offset(50)

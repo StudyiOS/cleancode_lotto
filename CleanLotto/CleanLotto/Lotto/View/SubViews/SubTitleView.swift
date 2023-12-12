@@ -36,11 +36,11 @@ extension SubTitleView: UISubviewStyle {
     
     func makeConstraints() {
         winningNumberSubTitleLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(50)
+            $0.top.equalToSuperview()
             $0.leading.equalToSuperview().offset(130)
         }
         bonusSubTitleLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(50)
+            $0.top.equalToSuperview()
             $0.trailing.equalToSuperview().offset(-20)
         }
     }
