@@ -34,6 +34,7 @@
 
 * http://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(num)
 
+
 ---
 
 ## Sam 구현 내용
@@ -42,4 +43,13 @@
 3. Mock Data 설정
 
 ![Simulator Screen Recording - iPhone 15 Pro - 2023-12-11 at 20 51 33](https://github.com/StudyiOS/cleancode_lotto/assets/126672733/81dcde2c-9dab-44ed-b67d-4f97e97c3326)
+
+---
+
+### Leo 구현 내용
+1. 기능 설명
+- 로또 최근 당첨결과를 초기화면으로 보여줌
+- 회차 피커 선택 이후 API 호출하여 정보 보여주도록 구현
+2. 구현 미리보기
+![Simulator Screen Recording - iPhone 15 - 2024-01-08 at 21 32 38](https://github.com/StudyiOS/cleancode_lotto/assets/59555700/e58103ed-d2df-4b4c-a2b5-10271c11c01b)
 
